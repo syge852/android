@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC1CC</color> <!-- Baby Pink -->
+    <color name="colorPrimaryDark">#FFB6C1</color> <!-- Light Pink -->
+    <color name="colorAccent">#FFD700</color> <!-- Soft Gold -->
+</resources>

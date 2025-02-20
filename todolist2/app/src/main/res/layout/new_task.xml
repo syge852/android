@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/newTaskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <EditText
+        android:id="@+id/newTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:layout_below="@id/newTaskText"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/newTaskDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:layout_below="@id/newTaskDescription"
+        android:layout_marginTop="8dp"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <EditText
+        android:id="@+id/newTaskDueTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Time"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:layout_below="@id/newTaskDueDate"
+        android:layout_marginTop="8dp"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/newTaskButton"
+        android:layout_width="99dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/newTaskDueDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:enabled="false"
+        android:text="Save"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
