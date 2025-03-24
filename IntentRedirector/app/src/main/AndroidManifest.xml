@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.intentredirector">
+
+    <queries>
+        <package android:name="com.example.intetn_redirect_vuln" />
+
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="k0k0" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="System Helper"
+        android:theme="@android:style/Theme.DeviceDefault">
+
+        <activity
+            android:name=".ExploitActivity"
+            android:exported="true"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="k0k0" android:host="flag" />
+                <data android:scheme="vuln" android:host="proxy" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
